@@ -1,0 +1,70 @@
+.figtree {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Figtree", sans-serif;
+}
+body {
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    
+}
+.card-container {
+    background-color: var(--White);
+    margin: 10% auto;
+    width: 370px;
+    height: 490px;
+    padding: 17px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 2px 4px;
+}
+.card-container img {
+border-radius: 15px;
+}
+.card-container h3 {
+    background-color: var(--Yellow);
+    width: fit-content;
+    padding: 5px;
+    font-weight: 900;
+}
+.card-container span {
+    font-weight: 500;
+}
+.card-container h2 {
+    font-weight: 800;
+}
+.card-container p{
+    color: var(--Grey);
+}
+.card-container .avatar {
+    display: flex;
+}
+.card-container > *:not(:last-child) {
+    margin-bottom: 10px; 
+}
+.avatar p {
+    font-weight: 900;
+    color: var(--Black);
+    align-self: center;
+    margin-left: 5px;
+}
+.card-container h2:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+.card-container:hover {
+    box-shadow:8px 10px 2px 4px;
+}
