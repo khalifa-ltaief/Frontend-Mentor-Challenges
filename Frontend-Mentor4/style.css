@@ -1,0 +1,146 @@
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330deg 74% 76% / 45%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%); 
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+}
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display:flex;
+    justify-content: center;
+    background-color: var(--Rose-White);
+    align-items: center;
+}
+.container {
+    width: 600px;
+    margin: 10% auto;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+.container img {
+    width:525px;
+    display:block;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+.container .sections-container .section-one h2 {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    margin-left: 5%;
+}
+.container .sections-container .section-one p {
+    margin: 2% 5%;
+    font-family: "Outfit", sans-serif;
+    color: var(--Wenge-Brown);
+}
+.container .sections-container .container-section-one {
+    margin-left: 10%;
+    font-family: "Outfit", sans-serif;
+}
+.container .sections-container .container-section-one h3 {
+    font-size: 20px;
+    color: var(--Dark-Raspberry);
+}
+.container .sections-container .container-section-one ul {
+    list-style: inside;
+    margin: 1% 3%;
+}
+.container .sections-container .container-section-one ul li span {
+    font-weight: 600;
+    color: var(--Dark-Charcoal);
+}
+.container .sections-container .container-section-one ul li::marker {
+    color: var(--Dark-Raspberry);
+}
+.container .sections-container .section-two ,
+.container .sections-container .section-three,
+.container .sections-container .section-four {
+    margin: 2% 5%;
+}
+.container .sections-container .section-two h3 ,
+.container .sections-container .section-three h3,
+.container .sections-container .section-four h3 {
+    color: var(--Nutmeg);
+    font-family: "Young Serif", serif;
+    font-size: 25px;
+    
+}
+.container .sections-container .section-two ul ,
+.container .sections-container .section-three ol {
+    margin: 2% 4%;
+    font-family: "Outfit", sans-serif;
+    color: var(--Wenge-Brown);
+}
+.container .sections-container .section-two ul li::marker ,
+.container .sections-container .section-three ol li::marker {
+    color: var(--Nutmeg);
+}
+hr {
+    color: var(--Wenge-Brown);
+    width: 90%;
+    margin: 4% auto;
+}
+.container .sections-container .section-two ul li ,
+.container .sections-container .section-three ol li {
+    padding-left: 2%;
+}
+.container .sections-container .section-three ol li p span {
+    font-weight: 700;
+    color: var(--Dark-Charcoal);
+}
+.container .sections-container .section-four .container-section-four .table-container div {
+    display: flex;
+    padding: .75rem 2rem;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.container .sections-container .section-four .container-section-four .table-container div:last-child {
+    border-bottom: 0;
+}
+.container .sections-container .section-four .container-section-four .table-container div p:nth-child(2) {
+    color: var(--Dark-Raspberry);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+.container .sections-container .section-four .container-section-four .table-container div > * {
+    width: 100px;
+    margin-right: auto;
+}
+.container .sections-container .section-four .container-section-four p {
+    color: var(--Wenge-Brown);
+    font-family: "Outfit", sans-serif;
+    padding-top: 2%;
+}
+@media (max-width:540px) {
+    .container .sections-container .section-one h2 {
+        margin-top: 2rem;
+    }
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+    .container img {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
